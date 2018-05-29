@@ -193,7 +193,7 @@ public class ConstUtils {
     /**
      * redis-migrate-tool相关路径
      */
-    public static String DEFAULT_REDIS_MIGRATE_TOOL_HOME = "/opt/cachecloud/redis-migrate-tool/";
+    public static String DEFAULT_REDIS_MIGRATE_TOOL_HOME = "cachecloud/redis-migrate-tool/";
     public static String REDIS_MIGRATE_TOOL_HOME = DEFAULT_REDIS_MIGRATE_TOOL_HOME;
 
     public static String getRedisMigrateToolCmd() {

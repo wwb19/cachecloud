@@ -66,7 +66,7 @@ public class AppDataMigrateCenterTest extends BaseTest {
         // String sourceServers = "127.0.0.1:6388";
 
         AppDataMigrateEnum sourceRedisMigrateEnum = AppDataMigrateEnum.RDB_FILE;
-        String sourceServers = "/opt/soft/redis/data/dump-6380.rdb";
+        String sourceServers = "/Users/wwb/devs/redis/cachecloud_data/soft/redis/data/dump-6380.rdb";
 
         AppDataMigrateEnum targetRedisMigrateEnum = AppDataMigrateEnum.REDIS_CLUSTER_NODE;
         String targetServers = "127.0.0.1:6380";
@@ -128,7 +128,7 @@ public class AppDataMigrateCenterTest extends BaseTest {
     public void testMigrateRDB() {
         String migrateMachineIp = "127.0.0.1";
         AppDataMigrateEnum sourceRedisMigrateEnum = AppDataMigrateEnum.RDB_FILE;
-        String sourceServers = "/opt/soft/redis/data/dump-6379.rdb.back";
+        String sourceServers = "/Users/wwb/devs/redis/cachecloud_data/soft/redis/data/dump-6379.rdb.back";
         AppDataMigrateEnum targetRedisMigrateEnum = AppDataMigrateEnum.REDIS_NODE;
         String targetServers = "127.0.0.1:6380";
 

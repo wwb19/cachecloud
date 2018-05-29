@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cachecloud_dir=$1
-base_dir=/opt/cachecloud-web
+base_dir=/Users/wwb/devs/redis/cachecloud_data/cachecloud-web
 mkdir -p ${base_dir}
 mkdir -p ${base_dir}/logs
 cp ${cachecloud_dir}/cachecloud/script/start.sh ${base_dir}

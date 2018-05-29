@@ -4,7 +4,7 @@
 # @desc: stop cachecloud
 # @time: 
 ###########################################################################
-DEPLOY_DIR=/opt/cachecloud-web
+DEPLOY_DIR=/Users/wwb/devs/redis/cachecloud_data/cachecloud-web
 SERVER_NAME=cachecloud
 PIDS=`ps -ef | grep java | grep "${DEPLOY_DIR}" |awk '{print $2}'`
 if [ -z "$PIDS" ]; then

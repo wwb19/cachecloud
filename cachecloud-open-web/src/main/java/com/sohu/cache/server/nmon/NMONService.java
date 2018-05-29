@@ -20,7 +20,7 @@ public class NMONService {
 	//获取系统版本位数命令
 	public static final String OS_INFO_CMD = "/bin/uname -a; /bin/cat /etc/issue";
 	//nmon路径
-	public static final String NMON_DIR = "/opt/cachecloud/soft/";
+	public static final String NMON_DIR = "/Users/wwb/devs/redis/cachecloud_data/cachecloud/soft/";
 	//nmon文件名
 	public static final String NMON = "nmon";
 	//nmon完整路径
@@ -28,19 +28,19 @@ public class NMONService {
 	//获取nmon版本
 	public static final String NMON_VERSION = "[ -e \""+NMON_FILE+"\" ] && "+NMON_FILE+" -V";
 	//nmon输出的结果文件
-	public static final String NMON_LOG = "/tmp/nmon.log";
+	public static final String NMON_LOG = "/Users/wwb/devs/redis/cachecloud_data/tmp/nmon.log";
 	//nmon输出的老结果文件
-	public static final String NMON_OLD_LOG = "/tmp/nmon.old.log";
+	public static final String NMON_OLD_LOG = "/Users/wwb/devs/redis/cachecloud_data/tmp/nmon.old.log";
 	//tcp输出的结果文件
-	public static final String SOCK_LOG = "/tmp/sock.log";
+	public static final String SOCK_LOG = "/Users/wwb/devs/redis/cachecloud_data/tmp/sock.log";
 	//ulimit输出的结果文件
-	public static final String ULIMIT_LOG = "/tmp/ulimit.log";
+	public static final String ULIMIT_LOG = "/Users/wwb/devs/redis/cachecloud_data/tmp/ulimit.log";
 	//nmon监控启动
 	public static final String START_SERVER_COLLECT = NMON_FILE+" -F " + NMON_LOG + " -s0 -c1;" +
 			"/bin/grep TCP /proc/net/sockstat > " + SOCK_LOG + 
 			";ulimit -n -u > " + ULIMIT_LOG;
 	//创建nmon路径
-	public static final String MK_NMON_DIR = "/bin/mkdir -p /opt/cachecloud/soft/";
+	public static final String MK_NMON_DIR = "/bin/mkdir -p /Users/wwb/devs/redis/cachecloud_data/cachecloud/soft/";
 	
 	/**
 	 * 启动nmon收集系统状况
